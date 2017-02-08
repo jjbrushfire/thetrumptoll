@@ -7,8 +7,14 @@ var data = [
     },
     {
         "date": "2/3/2017",
-        "title": "Eric Trumps business trip to Uruguay cost taxpayers $97,830 in hotel bills",
+        "title": "Eric Trump's business trip to Uruguay cost taxpayers $97,830 in hotel bills",
         "cost": 97830,
         "link": "https://www.washingtonpost.com/business/economy/eric-trumps-trip-to-uruguay-cost-taxpayers-97830-in-hotel-bills/2017/02/03/ababd64e-e95c-11e6-bf6f-301b6b443624_story.html"
+    },
+    {
+        "date": "2/3/2017",
+        "title": "Trump's Mar-a-Lago getaway could cost taxpayers more than $3 million",
+        "cost": 3000000,
+        "link": "http://www.politico.com/story/2017/02/trump-mar-lago-taxpayers-234562"
     }
 ];
