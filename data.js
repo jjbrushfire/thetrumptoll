@@ -16,5 +16,11 @@ var data = [
         "title": "Trump's Mar-a-Lago getaway could cost taxpayers more than $3 million",
         "cost": 3000000,
         "link": "http://www.politico.com/story/2017/02/trump-mar-lago-taxpayers-234562"
+    },
+    {
+        "date": "2/8/2017",
+        "title": "Unestimated: Department of Defense Seeks Space at Trump Tower",
+        "cost": 0,
+        "link": "http://abcnews.go.com/Politics/department-defense-seeks-space-trump-tower/story?id=45342873"
     }
 ];
