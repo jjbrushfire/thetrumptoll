@@ -1,0 +1,32 @@
+@mixin border-radius($r: $border-radius-base) {
+	@include border-left-radius($r);
+	@include border-right-radius($r);
+}
+@mixin border-left-radius($r: $border-radius-base) {
+	@include border-top-left-radius($r);
+	@include border-bottom-left-radius($r);
+}
+@mixin border-right-radius($r: $border-radius-base) {
+	@include border-top-right-radius($r);
+	@include border-bottom-right-radius($r);
+}
+@mixin border-top-radius($r: $border-radius-base) {
+	@include border-top-right-radius($r);
+	@include border-top-left-radius($r);
+}
+@mixin border-bottom-radius($r: $border-radius-base) {
+	@include border-bottom-right-radius($r);
+	@include border-bottom-left-radius($r);
+}
+@mixin border-top-left-radius($r: $border-radius-base) {
+	border-top-left-radius:$r;
+}
+@mixin border-top-right-radius($r: $border-radius-base) {
+	border-top-right-radius:$r;
+}
+@mixin border-bottom-left-radius($r: $border-radius-base) {
+	border-bottom-left-radius:$r;
+}
+@mixin border-bottom-right-radius($r: $border-radius-base) {
+	border-bottom-right-radius:$r;
+}

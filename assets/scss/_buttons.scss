@@ -1,0 +1,24 @@
+.btn {
+	@include transition;
+	text-transform: uppercase;
+	padding: $padding-base $padding-xl;
+	background-color: transparent;
+	border-color: $red;
+	color: $red;
+	&:focus, &:hover {
+		background-color: $red;
+		border-color: $red;
+		color: $white;
+	}
+	#the-cost & {
+		font-size: $font-size-lg;
+		background-color: transparent;
+		border-color: $white;
+		color: $white;
+		&:focus, &:hover {
+			background-color: $white;
+			border-color: $white;
+			color: $red;
+		}
+	}
+}

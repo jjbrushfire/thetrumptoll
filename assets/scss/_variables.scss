@@ -1,0 +1,35 @@
+$black: #111;
+$darker-gray: lighten($black, 15%);
+$dark-gray: lighten($black, 30%);
+$gray: lighten($black, 45%);
+$light-gray: lighten($black, 60%);
+$lighter-gray: lighten($black, 75%);
+$off-white: #f8f8f8;
+$white: #fff;
+
+// FULL COLOR PALETTE
+$red: #FF5252;
+$blue: #448AFF;
+
+$font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-weight-base: 300;
+$font-weight-light: 100;
+$font-weight-bold: 400;
+
+$font-size-base: 15px;
+$font-size-lg: $font-size-base*1.25;
+$font-size-xl: $font-size-base*2;
+$font-size-sm: $font-size-base*.75;
+
+$padding-base: 20px;
+$margin-base: 20px;
+
+$padding-sm: $padding-base/2;
+$padding-lg: $padding-base*2;
+$padding-xl: $padding-base*4;
+$padding-jumbo: $padding-base*10;
+$margin-sm: $margin-base/2;
+$margin-lg: $margin-base*2;
+$margin-xl: $margin-base*4;
+$margin-jumbo: $margin-base*10;

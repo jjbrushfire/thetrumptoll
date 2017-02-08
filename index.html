@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Cost of the Trump Administration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/trumptoll.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
+	<script src="data.js"></script>
+	<script src="costs.js"></script>
+</head>
+<body>
+	<div id="the-cost" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h1>How Much Money Has the Trump Family Cost American Taxpayers Since Inauguration Day?</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="counter" data-bind="text: formattedTotal"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+				<a href="#" class="btn">See the Costs</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="cost-list" class="col-sm-12">
+			<table>
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>What was the cause?</th>
+						<th>How much did it cost?</th>
+						<th>Source</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach: costs">
+					<tr>
+						<td data-bind="text: date"></td>
+						<td data-bind="text: title"></td>
+						<td data-bind="text: formattedCost"></td>
+						<td><a data-bind="attr: { href: link }">Read the article</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script type="application/javascript">
+		$(document).ready(function(){
+			ko.applyBindings(new CostsViewModel());
+
+			$("#the-cost .btn").click(function(e) {
+				$('html, body').animate({
+					scrollTop: $("#cost-list").offset().top
+				}, 500);
+				e.preventDefault();
+			});
+		});
+	</script>
+</body>
+</html>
