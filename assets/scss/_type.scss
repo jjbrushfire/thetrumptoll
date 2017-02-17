@@ -14,12 +14,21 @@ body {
 	padding: $padding-jumbo 15px;
 	margin-bottom: $margin-xl;
 	text-align: center;
+	@include phone {
+		padding: $padding-lg 15px;
+	}
 }
 h1 {
-	font-size: 54px;
+	font-size: $font-size-h1;
 	font-weight: $font-weight-light;
+	@include phone {
+		font-size: $font-size-h1-phone;
+	}
 }
 #counter {
-	font-size: 108px;
+	font-size: $font-size-cost;
 	font-weight: $font-weight-light;
+	@include phone {
+		font-size: $font-size-cost-phone;
+	}
 }
