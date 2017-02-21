@@ -30,7 +30,7 @@ var data = [
     {
         "date": "2/9/2017",
         "title": "Rubio says Trumps frequent trips to his Florida Winter White House are a burden on local government",
-        "cost": "248000",
+        "cost": 248000,
         "link": "http://theweek.com/speedreads/679037/rubio-says-trumps-frequent-trips-florida-winter-white-house-are-burden-local-government",
         "category": "Security"
     },
