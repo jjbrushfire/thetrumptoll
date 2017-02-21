@@ -4,7 +4,7 @@ var data = [
         "title": "Trump Tower Security Costs from Election Day to Inauguration",
         "cost": 35000000,
         "link": "https://www.nytimes.com/2016/12/05/nyregion/new-york-reimburse-trump-security-costs.html",
-        "category": "security"
+        "category": "Security"
     },
     {
         "date": "2/3/2017",
@@ -26,6 +26,13 @@ var data = [
         "cost": 0,
         "link": "http://abcnews.go.com/Politics/department-defense-seeks-space-trump-tower/story?id=45342873",
         "category": "Real Estate"
+    },
+    {
+        "date": "2/9/2017",
+        "title": "Rubio says Trumps frequent trips to his Florida Winter White House are a burden on local government",
+        "cost": "248000",
+        "link": "http://theweek.com/speedreads/679037/rubio-says-trumps-frequent-trips-florida-winter-white-house-are-burden-local-government",
+        "category": "Security"
     },
     {
         "date": "2/17/2017",
